@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 100 900; /* karena variable font bisa dari tipis sampai tebal */
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
+}

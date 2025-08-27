@@ -7,10 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-yellow-400: oklch(85.2% 0.199 91.936);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
-    --radius-xl: 0.75rem;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -188,6 +187,12 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .-mt-4 {
+    margin-top: calc(var(--spacing) * -4);
+  }
+  .-mt-5 {
+    margin-top: calc(var(--spacing) * -5);
+  }
   .contents {
     display: contents;
   }
@@ -196,6 +201,33 @@
   }
   .table {
     display: table;
+  }
+  .h-\[50vw\] {
+    height: 50vw;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/5 {
+    width: calc(2/5 * 100%);
+  }
+  .w-2\/6 {
+    width: calc(2/6 * 100%);
+  }
+  .w-2\/7 {
+    width: calc(2/7 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/5 {
+    width: calc(3/5 * 100%);
+  }
+  .w-\[100px\] {
+    width: 100px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -212,24 +244,39 @@
   .justify-center {
     justify-content: center;
   }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-blue-300 {
-    background-color: var(--color-blue-300);
+  .bg-\[\#1f1f1f\] {
+    background-color: #1f1f1f;
   }
-  .bg-yellow-400 {
-    background-color: var(--color-yellow-400);
+  .bg-\[\#141414\] {
+    background-color: #141414;
   }
-  .text-\[60px\] {
-    font-size: 60px;
+  .pt-\[50px\] {
+    padding-top: 50px;
   }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[\#eaf209\] {
+    color: #eaf209;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -238,6 +285,15 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
 }
 @property --tw-border-style {
   syntax: "*";
