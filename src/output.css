@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -184,8 +185,8 @@
   .bg-blue-300 {
     background-color: var(--color-blue-300);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
   }
   .text-\[60px\] {
     font-size: 60px;
